@@ -8,7 +8,7 @@
     body {
       font-family: sans-serif;
       background-color: #b39ddb; /* Soft purple */
-      background-image: <img src="a purple heart shape.png"> 
+      background-image: <img src="a purple heart shape.png" class="purple hearts" style="left: 10%;" width="50"> 
       background-repeat: repeat;
       background-size: 150px;
       text-align: center;
@@ -58,19 +58,13 @@
    <img src="Colorful Balloons PN.png" class="balloon" style="left: 10%;" width="50">
   <img src="Colorful Balloons PN.png" class="balloon" style="left: 80%;" width="50">
 
-  <!-- Audio -->
-  <audio autoplay loop>
-    <source src="birthday-song.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
-
   <!-- Confetti -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script>
     window.onload = () => {
       confetti({
         particleCount: 100,
-        spread: 70,
+        spread: 80,
         origin: { y: 0.6 }
       });
     };
